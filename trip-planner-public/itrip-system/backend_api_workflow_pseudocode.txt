@@ -1,0 +1,37 @@
+Input:
+    destination, limit
+Output:
+    final_places
+1. Check PostgreSQL cache using destination and limit
+2. If valid cached places exist:
+       return cached places
+3. Get city coordinates from OpenTripMap
+       coords = get_city_coordinates(destination)
+4. Request nearby POIs from OpenTripMap using coords
+5. For each POI in the API result:
+       if POI name or coordinates are missing:
+           skip this POI
+       if POI is a low-relevance place
+       such as bank, office, hotel, apartment,
+       supermarket, mall or ordinary building:
+           skip this POI
+       Convert OpenTripMap kinds into project tags:
+           museums / galleries / cultural places -> indoor, culture
+           parks / gardens / beaches / viewpoints -> outdoor, nature
+           restaurants / cafes / food places -> food, indoor
+           zoos / amusements / sport places -> adventure, outdoor
+           architecture / historic / monuments -> culture, landmark
+       Estimate attraction cost:
+           food -> 30
+           adventure -> 45
+           indoor culture -> 25
+           nature -> 0
+           others -> 10
+       Add processed POI to places list
+6. Load curated seed attractions for the destination
+7. Add seed attractions that are not already in the places list
+8. Sort places by tourism_score if available
+9. Select the top results according to limit
+10. Save final_places into PostgreSQL cache
+11. Return final_places
+

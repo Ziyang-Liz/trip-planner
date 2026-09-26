@@ -1,0 +1,29 @@
+.venv/
+**/.venv/
+node_modules/
+**/node_modules/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+dist/
+**/dist/
+.env
+**/.env
+.pytest_cache/
+**/.pytest_cache/
+
+# Local configuration and generated packaging metadata
+.env.*
+!.env.example
+*.egg-info/
+build/
+*.tsbuildinfo
+
+# Editor settings, diagnostics, and local release exports
+.vscode/
+.idea/
+*.log
+.DS_Store
+Thumbs.db
+release/
+.tools/

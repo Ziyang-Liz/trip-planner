@@ -1,0 +1,138 @@
+{
+  "activities": [
+    {
+      "id": "activity-0",
+      "place": {
+        "id": "brisbane-0",
+        "name": "City Botanic Gardens",
+        "location": {
+          "lat": -27.4756,
+          "lon": 153.0304
+        },
+        "outdoor": true,
+        "outdoor_verified": false,
+        "duration_minutes": 60,
+        "duration_verified": false,
+        "cost": 0,
+        "cost_verified": false,
+        "opening_windows": null
+      },
+      "start": "2026-10-01T09:00:00+10:00",
+      "end": "2026-10-01T10:00:00+10:00",
+      "must_visit": false,
+      "fixed_time": false,
+      "cancellation_cost": null
+    },
+    {
+      "id": "activity-1",
+      "place": {
+        "id": "brisbane-1",
+        "name": "Queensland Museum",
+        "location": {
+          "lat": -27.4698,
+          "lon": 153.018
+        },
+        "outdoor": false,
+        "outdoor_verified": false,
+        "duration_minutes": 60,
+        "duration_verified": false,
+        "cost": 20,
+        "cost_verified": false,
+        "opening_windows": null
+      },
+      "start": "2026-10-01T11:00:00+10:00",
+      "end": "2026-10-01T12:00:00+10:00",
+      "must_visit": false,
+      "fixed_time": false,
+      "cancellation_cost": null
+    },
+    {
+      "id": "activity-2",
+      "place": {
+        "id": "brisbane-2",
+        "name": "Gallery of Modern Art",
+        "location": {
+          "lat": -27.4705,
+          "lon": 153.0171
+        },
+        "outdoor": false,
+        "outdoor_verified": false,
+        "duration_minutes": 60,
+        "duration_verified": false,
+        "cost": 0,
+        "cost_verified": false,
+        "opening_windows": null
+      },
+      "start": "2026-10-01T13:00:00+10:00",
+      "end": "2026-10-01T14:00:00+10:00",
+      "must_visit": false,
+      "fixed_time": false,
+      "cancellation_cost": null
+    }
+  ],
+  "candidates": [
+    {
+      "id": "brisbane-3",
+      "name": "Roma Street Parkland",
+      "location": {
+        "lat": -27.4621,
+        "lon": 153.0186
+      },
+      "outdoor": true,
+      "outdoor_verified": false,
+      "duration_minutes": 60,
+      "duration_verified": false,
+      "cost": 0,
+      "cost_verified": false,
+      "opening_windows": null
+    },
+    {
+      "id": "brisbane-4",
+      "name": "Brisbane Powerhouse",
+      "location": {
+        "lat": -27.4676,
+        "lon": 153.053
+      },
+      "outdoor": false,
+      "outdoor_verified": false,
+      "duration_minutes": 60,
+      "duration_verified": false,
+      "cost": 25,
+      "cost_verified": false,
+      "opening_windows": null
+    },
+    {
+      "id": "brisbane-5",
+      "name": "New Farm Park",
+      "location": {
+        "lat": -27.4693,
+        "lon": 153.0514
+      },
+      "outdoor": true,
+      "outdoor_verified": false,
+      "duration_minutes": 60,
+      "duration_verified": false,
+      "cost": 0,
+      "cost_verified": false,
+      "opening_windows": null
+    }
+  ],
+  "current_time": "2026-10-01T09:00:00+10:00",
+  "current_location": {
+    "lat": -27.4705,
+    "lon": 153.026
+  },
+  "horizon_end": "2026-10-01T20:00:00+10:00",
+  "completed_activity_ids": [],
+  "locked_activity_ids": [],
+  "event": {
+    "type": "late_departure",
+    "planned_departure": "2026-10-01T09:00:00+10:00",
+    "delay_minutes": 40
+  },
+  "total_budget": 800,
+  "committed_cost": 0,
+  "committed_cost_verified": false,
+  "transport_cost": null,
+  "original_schedule_verified": false
+}

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trip-backend"
+version = "0.1.0"
+dependencies = [
+ "fastapi==0.141.1",
+ "uvicorn[standard]==0.53.0",
+ "httpx==0.28.1",
+ "requests==2.34.2",
+ "python-dotenv==1.2.3",
+ "cachetools==7.2.0",
+ "pydantic==2.13.5",
+ "psycopg2-binary==2.9.13",
+ "sqlalchemy==2.0.54",
+]
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["core*", "data*", "routers*", "services*"]
+namespaces = true
